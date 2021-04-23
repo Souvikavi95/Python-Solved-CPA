@@ -32,7 +32,6 @@ class PackagingCompany:
         max_cont = self.listOfContainers[max_pos]
         return max_cont
 
-
 if __name__ == "__main__":
     noc = int(input())
     container_list = []
