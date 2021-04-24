@@ -4,6 +4,7 @@ class Table:
         self.waiterName = waiterName
         self.status = status
 
+    @staticmethod
     def findWaiterWiseTotalNoOfTables(list_of_table_obj):
         res_dict = {}
         for i in list_of_table_obj:
@@ -12,6 +13,7 @@ class Table:
             res_dict[j.waiterName] += 1
         return res_dict
 
+    @staticmethod
     def findWaiterNameByTableNo(list_of_table_obj, table_no):
         for l in list_of_table_obj:
             if l.tableNo == table_no:
